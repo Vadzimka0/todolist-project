@@ -1,9 +1,5 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-const App = () => (
-  <div>
-    init
-  </div>
-);
+const App = (): ReactElement => <div>init</div>;
 
 export default App;
