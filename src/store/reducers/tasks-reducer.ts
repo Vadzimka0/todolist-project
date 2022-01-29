@@ -19,7 +19,7 @@ import {
   TaskType,
   todolistsAPI,
   UpdateTaskModelType,
-} from 'services/api';
+} from 'services/api/api';
 import { AppRootStateType } from 'store/store';
 import { handleServerAppError, handleServerNetworkError } from 'utils/error-utils';
 

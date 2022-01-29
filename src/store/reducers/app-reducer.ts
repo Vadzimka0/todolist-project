@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 
-import { authAPI, ResponseResult } from 'services/api';
+import { authAPI, ResponseResult } from 'services/api/api';
 import { setIsLoggedInAC } from 'store/reducers/auth-reducer';
 
 const initialState: InitialStateType = {

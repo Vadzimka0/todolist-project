@@ -7,7 +7,7 @@ import {
 } from './app-reducer';
 import { ClearDataActionType, clearTodosDataAC } from './todolists-reducer';
 
-import { authAPI, LoginParamsType, ResponseResult } from 'services/api';
+import { authAPI, LoginParamsType, ResponseResult } from 'services/api/api';
 import { handleServerAppError, handleServerNetworkError } from 'utils/error-utils';
 
 const initialState = {

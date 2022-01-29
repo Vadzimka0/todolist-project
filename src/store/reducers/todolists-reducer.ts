@@ -2,7 +2,7 @@ import { Dispatch } from 'redux';
 
 import { fetchTasksTC } from './tasks-reducer';
 
-import { todolistsAPI, TodolistType } from 'services/api';
+import { todolistsAPI, TodolistType } from 'services/api/api';
 import {
   RequestStatusType,
   setAppStatusAC,

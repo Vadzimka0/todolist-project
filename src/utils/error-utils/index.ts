@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 
-import { ResponseType } from 'services/api';
+import { ResponseType } from 'services/api/api';
 import {
   setAppErrorAC,
   SetAppErrorActionType,

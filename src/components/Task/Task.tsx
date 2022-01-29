@@ -5,7 +5,7 @@ import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 
 import { EditableSpan } from 'components/common/EditableSpan/EditableSpan';
-import { TaskStatuses, TaskType } from 'services/api';
+import { TaskStatuses, TaskType } from 'services/api/api';
 
 type TaskPropsType = {
   task: TaskType;

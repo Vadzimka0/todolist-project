@@ -7,7 +7,7 @@ import { Navigate } from 'react-router-dom';
 
 import { AddItemForm } from 'components/common/AddItemForm/AddItemForm';
 import { Todolist } from 'components/Todolist/Todolist';
-import { TaskStatuses } from 'services/api';
+import { TaskStatuses } from 'services/api/api';
 import {
   addTaskTC,
   removeTaskTC,

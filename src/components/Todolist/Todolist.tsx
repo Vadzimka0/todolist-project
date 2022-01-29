@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import { AddItemForm } from 'components/common/AddItemForm/AddItemForm';
 import { EditableSpan } from 'components/common/EditableSpan/EditableSpan';
 import { Task } from 'components/Task/Task';
-import { TaskStatuses, TaskType } from 'services/api';
+import { TaskStatuses, TaskType } from 'services/api/api';
 import { FilterValuesType, TodolistDomainType } from 'store/reducers/todolists-reducer';
 
 type PropsType = {
