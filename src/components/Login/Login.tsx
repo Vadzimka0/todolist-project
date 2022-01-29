@@ -26,8 +26,8 @@ export const Login = (): ReactElement => {
 
   const formik = useFormik({
     initialValues: {
-      email: '',
-      password: '',
+      email: 'wadik.nhl@gmail.com',
+      password: 'sept21Uh',
       rememberMe: false,
     },
     validate: values => {
@@ -74,6 +74,7 @@ export const Login = (): ReactElement => {
               <p>or use common test account credentials:</p>
               <p>Email: free@samuraijs.com</p>
               <p>Password: free</p>
+              <p>or use my entered personal data:</p>
             </FormLabel>
             <FormGroup>
               <TextField
