@@ -86,7 +86,7 @@ export const TodolistsList: React.FC = () => {
   );
 
   if (!isLoggedIn) {
-    return <Navigate to="login" />;
+    return <Navigate to="/login" />;
   }
 
   return (

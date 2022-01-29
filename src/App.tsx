@@ -19,7 +19,12 @@ import { initializeAppTC, RequestStatusType } from 'store/reducers/app-reducer';
 import { logoutTC } from 'store/reducers/auth-reducer';
 import { AppRootStateType } from 'store/store';
 
-const App = (): ReactElement => {
+type PropsType = {
+  // eslint-disable-next-line react/require-default-props
+  demo?: boolean;
+};
+
+const App = ({ demo = false }: PropsType): ReactElement => {
   const dispatch = useDispatch();
   const isInitialized = useSelector<AppRootStateType, boolean>(
     state => state.app.isInitialized,
@@ -32,8 +37,10 @@ const App = (): ReactElement => {
   );
 
   useEffect(() => {
-    dispatch(initializeAppTC());
-  }, []);
+    if (demo || !isLoggedIn) {
+      dispatch(initializeAppTC());
+    }
+  }, [demo, isLoggedIn]);
 
   const onClickLogout = (): void => {
     dispatch(logoutTC());
