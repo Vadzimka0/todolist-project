@@ -25,6 +25,7 @@
   ],
   "rules": {
     "react/jsx-props-no-spreading": 0,
+    "react/require-default-props": 0,
     "no-shadow": "off",
     "no-alert": "error",
     "no-debugger": "error",

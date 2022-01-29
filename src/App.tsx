@@ -20,7 +20,6 @@ import { logoutTC } from 'store/reducers/auth-reducer';
 import { AppRootStateType } from 'store/store';
 
 type PropsType = {
-  // eslint-disable-next-line react/require-default-props
   demo?: boolean;
 };
 
@@ -40,7 +39,7 @@ const App = ({ demo = false }: PropsType): ReactElement => {
     if (demo || !isLoggedIn) {
       dispatch(initializeAppTC());
     }
-  }, [demo, isLoggedIn]);
+  }, []);
 
   const onClickLogout = (): void => {
     dispatch(logoutTC());
