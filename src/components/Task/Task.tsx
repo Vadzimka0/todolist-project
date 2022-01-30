@@ -20,7 +20,7 @@ export const Task = React.memo((props: TaskPropsType) => {
 
   const onClickHandler = useCallback(
     () => removeTask(task.id, todolistId),
-    [task.id, todolistId, removeTask],
+    [task.id, todolistId],
   );
   const onChangeHandler = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => {
@@ -31,13 +31,13 @@ export const Task = React.memo((props: TaskPropsType) => {
         todolistId,
       );
     },
-    [task.id, todolistId, changeTaskStatus],
+    [task.id, todolistId],
   );
   const onTitleChangeHandler = useCallback(
     (newValue: string) => {
       changeTaskTitle(task.id, newValue, todolistId);
     },
-    [task.id, todolistId, changeTaskTitle],
+    [task.id, todolistId],
   );
 
   return (

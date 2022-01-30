@@ -41,42 +41,42 @@ export const TodolistsList: React.FC = () => {
     }
     const thunk = fetchTodolistsTC();
     dispatch(thunk);
-  }, [dispatch, isLoggedIn]);
+  }, []);
 
   const removeTask = useCallback((id: string, todolistId: string) => {
     const thunk = removeTaskTC(id, todolistId);
     dispatch(thunk);
-  }, [dispatch]);
+  }, []);
   const addTask = useCallback((title: string, todolistId: string) => {
     const thunk = addTaskTC(title, todolistId);
     dispatch(thunk);
-  }, [dispatch]);
+  }, []);
   const changeStatus = useCallback(
     (id: string, status: TaskStatuses, todolistId: string) => {
       const thunk = updateTaskTC(id, { status }, todolistId);
       dispatch(thunk);
     },
-    [dispatch],
+    [],
   );
   const changeTaskTitle = useCallback(
     (id: string, newTitle: string, todolistId: string) => {
       const thunk = updateTaskTC(id, { title: newTitle }, todolistId);
       dispatch(thunk);
     },
-    [dispatch],
+    [],
   );
   const changeFilter = useCallback((value: FilterValuesType, todolistId: string) => {
     const action = changeTodolistFilterAC(todolistId, value);
     dispatch(action);
-  }, [dispatch]);
+  }, []);
   const removeTodolist = useCallback((id: string) => {
     const thunk = removeTodolistTC(id);
     dispatch(thunk);
-  }, [dispatch]);
+  }, []);
   const changeTodolistTitle = useCallback((id: string, title: string) => {
     const thunk = changeTodolistTitleTC(id, title);
     dispatch(thunk);
-  }, [dispatch]);
+  }, []);
   const addTodolist = useCallback(
     (title: string) => {
       const thunk = addTodolistTC(title);
