@@ -39,7 +39,7 @@ const App = ({ demo = false }: PropsType): ReactElement => {
     if (demo || !isLoggedIn) {
       dispatch(initializeAppTC());
     }
-  }, []);
+  }, [demo, dispatch, isLoggedIn]);
 
   const onClickLogout = (): void => {
     dispatch(logoutTC());
